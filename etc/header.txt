@@ -1,0 +1,12 @@
+	<div>
+		<h2>
+			<img src="/images/logo1.png" width="200" height="200">
+
+				<a href="main">Main</a>
+				<a href="menu">Menu</a>
+				<a href="about">About</a>
+				<a href="help">Help</a>
+				<a href="missing">missing</a>
+		</h2>
+
+	<div>
