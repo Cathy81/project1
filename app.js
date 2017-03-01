@@ -42,8 +42,6 @@ app.get("/main",function(req,res){
 	res.sendFile(`${publicPath}/testJs`);
 })
 
-
-
 // app.post("/order", function (req,res) {
 // 	console.log("Arequest from JSON");
 // 	var items=req.body.cart.split(",");
