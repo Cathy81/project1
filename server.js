@@ -5,7 +5,7 @@ var bodyParser=require("body-Parser");
 var data=require("./json/pizzas.json");
 
 var app=express();
-
+app.set('port', 8080);
 var publicPath=path.resolve(__dirname, "public"	);
 
 app.use(express.static(publicPath));
@@ -57,8 +57,8 @@ app.use(function (req,res) {
 	res.send("404");
 })
 
-http.createServer(app).listen(3000);
-console.log('Server is listening at port 3000');
+http.createServer(app).listen(app.get('port'));
+console.log(`Server is running at port ${app.get('port')}`);
 var header=`
 <head>
 	<title>Test Javascript</title>
